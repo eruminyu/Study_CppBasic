@@ -2,6 +2,7 @@
   <Configurations>
     <Platform Name="x64" />
   </Configurations>
+  <Project Path="ConsoleInput/ConsoleInput.vcxproj" Id="da5dca9e-a849-48e7-b898-fd4bf66a4c96" />
   <Project Path="ConsoleIO/ConsoleIO.vcxproj" Id="5570232c-7547-4592-bdb6-0b15b9395fd6">
     <BuildType Project="Debug" />
   </Project>
