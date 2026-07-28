@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="ConsoleIO/ConsoleIO.vcxproj" Id="5570232c-7547-4592-bdb6-0b15b9395fd6">
+    <BuildType Project="Debug" />
+  </Project>
+</Solution>
