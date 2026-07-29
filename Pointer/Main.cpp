@@ -23,17 +23,20 @@ void Release(int** t) {
 */
 
 // 두 변수의 값을 서로 교환하는 함수
-/*
-void Swap(int& a, int& b) {
+
+void SwapRef(int& a, int& b) {
 	int temp = a;
 	a = b;
 	b = temp;
 }
-*/
-//자동완성된건데 아래는 따라한거
 
-void Swap(int* a, int* b) {
+//자동완성된건데 아래는 따라한거
+//위가 레퍼런스, 아래가 포인터를 사용한거임
+
+void Swap(int* const a, int* const b) //const
+{
 	int temp = *a;
+	// a++; // 실수한거임, a++는 포인터를 증가시키는 것이므로 잘못된 코드임
 	*a = *b;
 	*b = temp;
 };
@@ -48,6 +51,7 @@ int main() {
 
 	int numberA = 10;
 	int numberB = 20;
+	SwapRef(numberA, numberB); // SwapRef 함수 호출, numberA와 numberB의 참조를 전달
 	Swap(&numberA, &numberB); // Swap 함수 호출, numberA와 numberB의 주소를 전달
 
 	int var = 8;
