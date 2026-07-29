@@ -16,6 +16,14 @@ int main()
 		std::cout << "0이 아닌 숫자를 입력하세요(첫 번째): ";
 		std::cin >> buffer;
 
+
+		// 검증
+		// int -> 32bit? 최소가 32bit 이고 정의되지 않음, 그래서 재정의하여 사용함.
+		//long long == __int64
+		// int64_t == __int64
+		// int32_t == int
+	
+
 		if ((value = atoi(buffer)) == 0)
 		{
 			std::cout << "잘못된 입력입니다. 0이 아닌 숫자를 입력해주세요.\n";
