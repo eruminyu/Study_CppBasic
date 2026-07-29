@@ -1,5 +1,8 @@
 ﻿#include <iostream>
 //#include <array>
+//#include <windows.h>
+
+#include <string>
 
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
@@ -77,6 +80,8 @@ int main()
 	PrintArray(arr, length); // 배열과 크기를 전달하여 원소 출력
 
 	
+	
+
 
 
 	std::cin.get(); // 프로그램이 종료되지 않도록 대기

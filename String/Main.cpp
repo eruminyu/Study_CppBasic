@@ -9,6 +9,10 @@ public:
 		size_t length = strlen(name) + 1; // 문자열 길이 계산
 		this->name = new char[length]; // 문자열 길이 + 1 (null 문자 때문에)
 
+
+		strcpy_s(this->name, length, name); // 문자열 복사, null 문자 포함
+
+		/*
 		//값을 저장. 값 복사, 문자열 복사
 		for (size_t ix = 0; ix < length - 1; ++ix)
 		{
@@ -16,7 +20,7 @@ public:
 		}
 		
 		this->name[length - 1] = '\0'; // null 문자 추가]
-
+		*/
 	}
 
 	// 소멸자
@@ -46,10 +50,13 @@ int main()
 	player.PrintName(); // 플레이어 이름 출력
 
 	// 문자열
+	//const wchar_t* wName = L"Minsung"; // wide 문자열 리터럴, const wchar_t* 타입
 	auto name = "Minsung"; // 문자열 리터럴, const char* 타입
 	const char* name2 = "Minsung"; // const char* 타입, 문자열 리터럴
 	// 문자열 리터럴은 컴파일 타임에 결정되므로, const char* 타입으로 선언하는 것이 일반적임
 	// 문자열에 마우스를 올렸을 때 8개인 이유는 마지막에 '\0'이 들어가기 때문임, 문자열의 끝을 나타내는 null 문자
+
+	
 
 	
 	/*
@@ -65,6 +72,22 @@ int main()
 	size_t length = strlen(name); // 문자열 길이, null 문자를 제외한 길이
 
 	std::cout << "string length: " << length << "\n"; // 문자열 길이 출력
+
+	// Wide Character
+	const wchar_t* wcName = L"Minsung"; // wide 문자열 리터럴, const wchar_t* 타입
+
+	//Windows 타입
+	//WCHAR
+
+	//STL 문자열 타입.
+	std::string nameString = "Minsung"; // std::string 타입, 문자열 리터럴로 초기화
+	std::cout << nameString << "\n"; // std::string 출력
+	std::cout << "nameString length: " << nameString.size() << "\n"; // std::string 길이 출력
+	//std::wstring wNameString = L"Minsung"; // std::wstring 타입, wide 문자열 리터럴로 초기화
+
+	//std::string을 C-Raw string으로 변환
+	const char* rawName = nameString.c_str(); // std::string을 C 스타일 문자열로 변환																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+	
 
 	std::cin.get(); // 프로그램이 종료되지 않도록 대기
 }
