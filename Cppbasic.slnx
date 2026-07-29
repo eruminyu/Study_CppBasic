@@ -9,4 +9,5 @@
     <BuildType Project="Debug" />
   </Project>
   <Project Path="Pointer/Pointer.vcxproj" Id="afc1749c-38cc-470a-9db6-91822e965712" />
+  <Project Path="String/String.vcxproj" Id="3126f0c6-5374-490f-842a-f0c8085fc14d" />
 </Solution>
