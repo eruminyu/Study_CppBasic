@@ -11,6 +11,8 @@
     <BuildType Project="Debug" />
   </Project>
   <Project Path="CopyConstructor/CopyConstructor.vcxproj" Id="83ae1e5d-a462-4177-9abf-51a593202869" />
+  <Project Path="CustomRTTI/CustomRTTI.vcxproj" Id="6d45f8ed-1ec6-460e-bb0c-397f675483e5" />
+  <Project Path="FileIO/FileIO.vcxproj" Id="75b3b5aa-de13-4b83-b127-fb1aea2f53ac" />
   <Project Path="ForwardDeclaration/ForwardDeclaration.vcxproj" Id="c41a560b-c229-43fc-9af3-c26746b0e5f6" />
   <Project Path="OperatorOverloading/OperatorOverloading.vcxproj" Id="3033c2f4-156b-4e93-9297-91c16b6d42d2" />
   <Project Path="Pointer/Pointer.vcxproj" Id="afc1749c-38cc-470a-9db6-91822e965712" />
