@@ -17,6 +17,7 @@
   <Project Path="OperatorOverloading/OperatorOverloading.vcxproj" Id="3033c2f4-156b-4e93-9297-91c16b6d42d2" />
   <Project Path="Pointer/Pointer.vcxproj" Id="afc1749c-38cc-470a-9db6-91822e965712" />
   <Project Path="RTTI/RTTI.vcxproj" Id="7ce8b35e-a853-494b-912e-fd9d8e8dfb17" />
+  <Project Path="SharedPtr/SharedPtr.vcxproj" Id="2fbe3d50-e0e7-4986-98c6-a97478a5db7d" />
   <Project Path="Static/Static.vcxproj" Id="7f92fac0-71cc-4ed3-bd93-cd2ef09e44a5" />
   <Project Path="String/String.vcxproj" Id="3126f0c6-5374-490f-842a-f0c8085fc14d" />
   <Project Path="Template/Template.vcxproj" Id="75bc97ab-30ff-43a9-b811-e1875c095b2e" />
