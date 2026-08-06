@@ -22,5 +22,6 @@
   <Project Path="String/String.vcxproj" Id="3126f0c6-5374-490f-842a-f0c8085fc14d" />
   <Project Path="Template/Template.vcxproj" Id="75bc97ab-30ff-43a9-b811-e1875c095b2e" />
   <Project Path="UniquePtr/UniquePtr.vcxproj" Id="dd3d7d79-6b80-4682-a367-86406200f347" />
+  <Project Path="ValueCatagory/ValueCatagory.vcxproj" Id="06b9412a-893a-4b41-a375-167f857a68b8" />
   <Project Path="Virtual/Virtual.vcxproj" Id="b1eccf54-e967-4886-bc04-6ae8515f282f" />
 </Solution>
