@@ -66,15 +66,60 @@ private:
 	char* name = nullptr;
 };
 
+// 함수 오버로딩 (같은 이름의 함수가 여러개 배치되는 형태)
+void Use(int& value)
+{
+	std::cout << "void Use(int& value)\n";
+}
+void Use(int&& value)
+{
+	std::cout << "void Use(int&& value)\n";
+}
+
+class Item
+{
+
+};
+
+void Test(Item& item)
+{
+	std::cout << "void Test(Item& item)\n";
+}
+
+void Test(Item&& item)
+{
+	std::cout << "void Test(Item&& item)\n";
+}
+
+template<typename T>
+void Function(T&& value)
+{
+	Test(std::forward<T>(value));
+}
+
+
 
 int main()
 {
+	int value = 10;
+	Use(value);
+	Use(std::move(value));
+
+	Item item;
+	Function(item);
+	Function(Item());
+
+	//std::unique_ptr<Actor> actor1 = std::make_unique<Actor>();
+	//std::unique_ptr<Actor> actor2 = std::move(actor1);
 	//std::string actor2Name = "TestActor";
 	////Actor actor1 = "Test"; -> 한번 적어봤는데 이건 안되네
 	//Actor actor1("Test");	// -> 이 구문이 동작하려면 
 	//						// Actor(std::string& newName) ->
 	//						// 	Actor(const std::string& newName)로 수정
 	//Actor actor2(actor2Name);
+	
+	
+
 	// count 는 L-Value
 	//L-Value : 
 	// - 메모리를 차지하고,
@@ -93,5 +138,11 @@ int main()
 	// R-Value Reference(R-Value 참조)
 	//int&& rRef = count; -> 오류
 	int&& rRef = 10;
+
+	rRef = 30; // rRef 변수는 L-Value
+
+	//int&& rRef2 = rRef;
+
+
 
 }
